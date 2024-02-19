@@ -1,0 +1,2318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>723</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>723</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>723</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="wrapper">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QTabWidget" name="tabs">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>701</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="sizeIncrement">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab__owner">
+     <attribute name="title">
+      <string>Владелец</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>671</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Место проживания</string>
+      </property>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>28</y>
+         <width>41</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Город</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>28</y>
+         <width>43</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Улица</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>68</y>
+         <width>29</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Дом</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>68</y>
+         <width>66</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Квартира</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="city">
+       <property name="geometry">
+        <rect>
+         <x>54</x>
+         <y>28</y>
+         <width>231</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="maxLength">
+        <number>27</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="street">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>28</y>
+         <width>300</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="maxLength">
+        <number>36</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="house">
+       <property name="geometry">
+        <rect>
+         <x>54</x>
+         <y>68</y>
+         <width>70</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="maxLength">
+        <number>8</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="flat">
+       <property name="geometry">
+        <rect>
+         <x>215</x>
+         <y>68</y>
+         <width>70</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="maxLength">
+        <number>8</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>68</y>
+         <width>66</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Телефон</string>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="telephone">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>68</y>
+         <width>149</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="decimals">
+        <number>0</number>
+       </property>
+       <property name="minimum">
+        <double>0.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>99999999999.000000000000000</double>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="telephone__2">
+       <property name="geometry">
+        <rect>
+         <x>511</x>
+         <y>68</y>
+         <width>149</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="decimals">
+        <number>0</number>
+       </property>
+       <property name="minimum">
+        <double>0.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>99999999999.000000000000000</double>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>218</y>
+        <width>671</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Паспортные данные</string>
+      </property>
+      <widget class="QLineEdit" name="issued__by">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>100</y>
+         <width>658</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="maxLength">
+        <number>90</number>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="date__of_issue">
+       <property name="geometry">
+        <rect>
+         <x>506</x>
+         <y>42</y>
+         <width>158</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>36</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>506</x>
+         <y>22</y>
+         <width>88</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Когда выдан</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>171</x>
+         <y>22</y>
+         <width>47</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Номер</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>22</y>
+         <width>43</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Серия</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="passport__series">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>42</y>
+         <width>161</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="maxLength">
+        <number>19</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="passport__id">
+       <property name="geometry">
+        <rect>
+         <x>171</x>
+         <y>42</y>
+         <width>161</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="maxLength">
+        <number>19</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>80</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Кем выдан</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>338</x>
+         <y>22</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Код подразделения</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="division__code">
+       <property name="geometry">
+        <rect>
+         <x>338</x>
+         <y>42</y>
+         <width>161</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="maxLength">
+        <number>19</number>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>456</x>
+        <y>65</y>
+        <width>110</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Дата рождения:</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="date__of_birth">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>569</x>
+        <y>69</y>
+        <width>100</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>214</width>
+        <height>42</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="buttonSymbols">
+       <enum>QAbstractSpinBox::NoButtons</enum>
+      </property>
+      <property name="displayFormat">
+       <string>dd.MM.yyyy</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>235</x>
+        <y>65</y>
+        <width>31</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Пол:</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="gender__male">
+      <property name="geometry">
+       <rect>
+        <x>272</x>
+        <y>76</y>
+        <width>21</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>22</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">gender</string>
+      </attribute>
+     </widget>
+     <widget class="QRadioButton" name="gender__female">
+      <property name="geometry">
+       <rect>
+        <x>298</x>
+        <y>76</y>
+        <width>51</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icon/gender__f.png</normaloff>icon/gender__f.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>22</width>
+        <height>22</height>
+       </size>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">gender</string>
+      </attribute>
+     </widget>
+     <widget class="QLabel" name="surname__label">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>10</y>
+        <width>65</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Фамилия</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="surname">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>30</y>
+        <width>214</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>42</height>
+       </size>
+      </property>
+      <property name="maxLength">
+       <number>26</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="name__label">
+      <property name="geometry">
+       <rect>
+        <x>236</x>
+        <y>10</y>
+        <width>30</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Имя</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="name">
+      <property name="geometry">
+       <rect>
+        <x>235</x>
+        <y>30</y>
+        <width>214</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>42</height>
+       </size>
+      </property>
+      <property name="maxLength">
+       <number>26</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="middlename">
+      <property name="geometry">
+       <rect>
+        <x>457</x>
+        <y>10</y>
+        <width>65</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Отчество</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="patronymic">
+      <property name="geometry">
+       <rect>
+        <x>456</x>
+        <y>30</y>
+        <width>214</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>42</height>
+       </size>
+      </property>
+      <property name="maxLength">
+       <number>26</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="update__owner">
+      <property name="geometry">
+       <rect>
+        <x>343</x>
+        <y>469</y>
+        <width>161</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Изменить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="add__owner">
+      <property name="geometry">
+       <rect>
+        <x>515</x>
+        <y>469</y>
+        <width>161</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="comment">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>387</y>
+        <width>658</width>
+        <height>75</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="comment__label">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>367</y>
+        <width>105</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Комментарий</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="date__on_reg">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>470</y>
+        <width>111</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="displayFormat">
+       <string>dd.MM.yyyy</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>469</y>
+        <width>121</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Дата регистрации</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab__contributions">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="font">
+      <font>
+       <italic>false</italic>
+      </font>
+     </property>
+     <attribute name="title">
+      <string>Взносы</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>231</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Счетчик</string>
+      </property>
+      <widget class="QTableWidget" name="table__electro">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>30</y>
+         <width>221</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="sortingEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="rowCount">
+        <number>5</number>
+       </property>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>100</number>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>100</number>
+       </attribute>
+       <attribute name="verticalHeaderHighlightSections">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderStretchLastSection">
+        <bool>false</bool>
+       </attribute>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <column>
+        <property name="text">
+         <string>№ Счетчика</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Показания</string>
+        </property>
+       </column>
+       <item row="0" column="1">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </item>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>671</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Взносы</string>
+      </property>
+      <widget class="QTableWidget" name="table__membership">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>33</y>
+         <width>650</width>
+         <height>178</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>650</width>
+         <height>178</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="autoScroll">
+        <bool>true</bool>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="sortingEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="rowCount">
+        <number>5</number>
+       </property>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>90</number>
+       </attribute>
+       <attribute name="verticalHeaderHighlightSections">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderStretchLastSection">
+        <bool>false</bool>
+       </attribute>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <column>
+        <property name="text">
+         <string>Дата</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Год</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Взнос</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Земля</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Эл. эн.</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Пеня</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Сумма</string>
+        </property>
+       </column>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>240</y>
+        <width>441</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Оплата</string>
+      </property>
+      <widget class="QLineEdit" name="counter__number">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>35</y>
+         <width>130</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="maxLength">
+        <number>15</number>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="payment__contribution">
+       <property name="geometry">
+        <rect>
+         <x>67</x>
+         <y>80</y>
+         <width>130</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="decimals">
+        <number>0</number>
+       </property>
+       <property name="maximum">
+        <double>100000.000000000000000</double>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="testimony">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>80</y>
+         <width>130</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="decimals">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <double>999999.000000000000000</double>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="payment__land">
+       <property name="geometry">
+        <rect>
+         <x>67</x>
+         <y>125</y>
+         <width>130</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="decimals">
+        <number>0</number>
+       </property>
+       <property name="maximum">
+        <double>1000000.000000000000000</double>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>215</x>
+         <y>35</y>
+         <width>91</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>№ Счетчика</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>12</x>
+         <y>80</y>
+         <width>51</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Взнос</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>12</x>
+         <y>125</y>
+         <width>51</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Земля</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>215</x>
+         <y>80</y>
+         <width>80</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Показания</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="id__garage_label_6">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>12</x>
+         <y>35</y>
+         <width>68</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Год&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="payment__year">
+       <property name="geometry">
+        <rect>
+         <x>67</x>
+         <y>35</y>
+         <width>130</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <property name="maxVisibleItems">
+        <number>15</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="id__garage_label_2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>12</x>
+         <y>170</y>
+         <width>68</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Пеня&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="payment__penalty">
+       <property name="geometry">
+        <rect>
+         <x>67</x>
+         <y>170</y>
+         <width>64</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="payment__electro_energy">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>125</y>
+         <width>130</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="decimals">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <double>100000.000000000000000</double>
+       </property>
+      </widget>
+      <widget class="QLabel" name="id__garage_label_7">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>215</x>
+         <y>125</y>
+         <width>91</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Цена за 1кв.</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="penalty__label">
+       <property name="geometry">
+        <rect>
+         <x>138</x>
+         <y>169</y>
+         <width>56</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="l1__l3">
+       <property name="geometry">
+        <rect>
+         <x>395</x>
+         <y>170</y>
+         <width>36</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="payment__sum">
+      <property name="geometry">
+       <rect>
+        <x>384</x>
+        <y>470</y>
+        <width>61</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="payment__sum2">
+      <property name="geometry">
+       <rect>
+        <x>262</x>
+        <y>470</y>
+        <width>70</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>К оплате:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="payment__add">
+      <property name="geometry">
+       <rect>
+        <x>463</x>
+        <y>470</y>
+        <width>221</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="disabled">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>470</y>
+        <width>87</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Отключен</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="brewed">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>470</y>
+        <width>87</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Заварен</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab__summary">
+     <attribute name="title">
+      <string>Сводка</string>
+     </attribute>
+     <widget class="QLabel" name="summary__4">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>338</y>
+        <width>200</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Количество заявлений</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__registration_2">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>100</y>
+        <width>400</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__name">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>40</y>
+        <width>200</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Имя</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__disabled">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>368</y>
+        <width>200</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Отключен</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__surname">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>14</y>
+        <width>200</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Фамилия</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__disabled_2">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>370</y>
+        <width>400</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>278</y>
+        <width>200</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Последний год оплаты</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__street">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>128</y>
+        <width>200</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Улица</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__flat">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>188</y>
+        <width>200</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Квартира</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__middlename">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>68</y>
+        <width>200</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Отчество</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__telephone">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>218</y>
+        <width>200</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Телефон</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__house_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>160</y>
+        <width>400</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__flat_2">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>190</y>
+        <width>400</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__street_2">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>130</y>
+        <width>400</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="number__of_applications">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>340</y>
+        <width>400</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>279</x>
+        <y>220</y>
+        <width>401</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="summary__telephone2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="summary__telephone2_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="summary__brewed">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>398</y>
+        <width>200</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Заварен</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__3">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>308</y>
+        <width>200</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Показания счётчика</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__brewed_2">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>400</y>
+        <width>400</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__surname_2">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>12</y>
+        <width>400</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__name_2">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>42</y>
+        <width>400</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__registration">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>98</y>
+        <width>200</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Дата регистрации</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__middlename_2">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>70</y>
+        <width>400</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="summary__house">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>158</y>
+        <width>200</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Дом</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="last__year_payment">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>280</y>
+        <width>400</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>310</y>
+        <width>401</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="summary__type">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="summary__counter">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="meter__readings">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="id__garage_label_3">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>20</y>
+      <width>68</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Эл. эн.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="id__garage_label_4">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>60</y>
+      <width>68</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Взнос&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="id__garage_label_5">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>60</y>
+      <width>68</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Земля&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="id__garage_label">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>21</x>
+      <y>20</y>
+      <width>68</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;№ Гаража&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="id__garage">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>20</y>
+      <width>90</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>36</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>42</height>
+     </size>
+    </property>
+    <property name="maxLength">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="date__today">
+    <property name="geometry">
+     <rect>
+      <x>344</x>
+      <y>20</y>
+      <width>100</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="currentSection">
+     <enum>QDateTimeEdit::DaySection</enum>
+    </property>
+    <property name="displayFormat">
+     <string>dd.MM.yyyy</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>20</y>
+      <width>41</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Дата</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="price__save">
+    <property name="geometry">
+     <rect>
+      <x>624</x>
+      <y>20</y>
+      <width>86</width>
+      <height>76</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Сохранить</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="price__membership_fee">
+    <property name="geometry">
+     <rect>
+      <x>344</x>
+      <y>60</y>
+      <width>100</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="decimals">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <double>100000.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="price__land_tax">
+    <property name="geometry">
+     <rect>
+      <x>514</x>
+      <y>60</y>
+      <width>100</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="decimals">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <double>100000.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="price__electro_energy">
+    <property name="geometry">
+     <rect>
+      <x>514</x>
+      <y>20</y>
+      <width>100</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="decimals">
+     <number>2</number>
+    </property>
+    <property name="maximum">
+     <double>100000.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add__garage">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>20</y>
+      <width>36</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icon/add__garage.png</normaloff>icon/add__garage.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>36</width>
+      <height>36</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="del__garage">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>20</y>
+      <width>36</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icon/del__garage.png</normaloff>icon/del__garage.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>36</width>
+      <height>36</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="main__menu">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>723</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="New__bd"/>
+    <addaction name="Open"/>
+    <addaction name="Exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="action"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Отчёты</string>
+    </property>
+    <addaction name="debt"/>
+    <addaction name="restrictions"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <action name="Open">
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="Exit">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="New__bd">
+   <property name="text">
+    <string>Создать</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="debt">
+   <property name="text">
+    <string>Задолженность</string>
+   </property>
+  </action>
+  <action name="restrictions">
+   <property name="text">
+    <string>Санкции</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="gender"/>
+ </buttongroups>
+</ui>

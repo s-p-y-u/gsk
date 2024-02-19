@@ -1,0 +1,291 @@
+@font-face {
+  font-family: 'font';
+  src: url(font/font.ttf) format('ttf');
+  font-weight: 400;
+}
+QDockWidget{
+    background-color: rgb(64, 64, 64);
+}
+* {
+    color: rgb(216, 211, 205);
+    font-size: 14px;
+    selection-background-color:  rgb(64, 64, 64);
+}
+#id__garage, #date__today, #price__electro_energy, #price__membership_fee, #price__land_tax {
+    background-color: rgb(36, 36, 36);
+    border-radius: 3px;
+    border: 1px solid rgb(106, 101, 95);
+}
+
+
+QPushButton {
+    background-color: rgb(64, 64, 64);
+    border-radius: 3px;
+    border: 1px solid rgb(106, 101, 95);
+}
+QPushButton::pressed {
+    border: 1px solid rgb(36, 36, 36);
+    background-color: rgb(54, 54, 54);
+}
+QPushButton::hover {
+    background-color: rgb(74, 74, 74);
+}
+
+
+
+#surname, #name, #patronymic,#date__of_birth,#city,#street,#house,#flat,#telephone,#telephone__2,#passport__series,#passport__id,#division__code,#date__of_issue,#issued__by,
+#comment,#date__on_reg,#date__off_reg,#payment__year,#payment__contribution, #payment__land, #payment__penalty, #counter__number, #testimony, #payment__electro_energy{
+    background-color: rgb(36, 36, 36);
+    border-radius: 3px;
+    border: 1px solid rgb(106, 101, 95);
+}
+
+
+#summary__surname, #summary__name, #summary__middlename, #summary__registration {
+
+}
+#summary__surname_2, #summary__name_2, #summary__middlename_2, #summary__registration_2, #summary__street_2, #summary__house_2, #summary__flat_2, #summary__telephone2,
+#summary__telephone2_2, #summary__disabled_2, #summary__brewed_2, #last__year_payment, #meter__readings, #number__of_applications, #summary__type, #summary__counter {
+    color: rgb(208, 149, 69);
+}
+
+
+#wrapper {
+    background-color: #2B2B2B;
+}
+#tab__owner, #tab__contributions, #tab__summary {
+    background-color: rgb(64, 64, 64);
+}
+
+
+QTableWidget, QTableWidget::item:selected, QHeaderView, QTableCornerButton::section {
+    background-color: rgb(64, 64, 64);
+    border: none;
+}
+QTableWidget::item{
+    background-color: rgb(36, 36, 36);
+}
+QHeaderView::section {
+    border: none;
+    background-color: rgb(64, 64, 64);
+}
+QTableCornerButton::section {
+    background-color: rgb(64, 64, 64);   
+}
+
+
+
+QTabWidget::pane{
+    border: none;
+    /*top: -1px;*/
+}
+QTabBar::tab {
+    background-color: rgb(54, 54, 54);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 30px;
+    width: 80px;
+    margin-right: 1px;
+}
+QTabBar::tab:selected {
+    background-color: rgb(64, 64, 64);
+    top: 0px;
+    height: 30px;
+}
+
+
+QComboBox {
+    background-color: rgb(36, 36, 36);
+    border-radius: 3px;
+    border: 1px solid rgb(106, 101, 95);
+}
+QComboBox::drop-down {
+    width: 22px;
+    height: 34px;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+QComboBox::down-arrow {
+    image: url(icon/slide-down.png);
+    width: 24px;
+    height: 24px;
+}
+QComboBox::down-arrow:on {
+    image: url(icon/slide-up.png);
+}
+QComboBox QAbstractItemView {
+    background-color: rgb(34, 34, 34);
+}
+QComboBox QAbstractItemView::item:selected, 
+QComboBox QAbstractItemView::item:hover {
+    background-color: rgb(64, 64, 64);
+    border: none;
+}
+
+/* QComboBox QAbstractScrollArea QScrollBar:vertical {
+    background-color: rgb(34, 34, 34);
+} */
+/* QComboBox QAbstractScrollArea QScrollBar::handle:vertical {
+    background-color: rgb(64, 64, 64);
+} */
+QScrollBar:vertical {
+    background-color: rgb(34, 34, 34);
+    border: none;
+    width: 6px;               
+    margin: 0px 0px 0px 0px;
+    min-height: 0px;
+}
+QScrollBar::handle:vertical {
+    border-radius: 3px;
+    background-color: rgb(64, 64, 64);
+    min-height: 0px;
+}
+/* QScrollBar::handle:vertical:hover{
+    background-color: rgb(255, 0, 127);
+} */
+/* QScrollBar::handle:vertical:pressed {
+    background-color: rgb(185, 0, 92);
+} */
+
+QScrollBar::add-line:vertical {
+    background-color: rgb(64, 64, 64);
+    height: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+    background-color: rgb(64, 64, 64);
+    height: 0 px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+/* QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+    border: 2px solid grey;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+} */
+/* QScrollBar::up-arrow:vertical {
+    image: url(icon/slide-up.png);
+}
+QScrollBar::down-arrow:vertical {
+    image: url(icon/slide-down.png);
+} */
+/* QScrollBar::add-page, QScrollBar::sub-page {
+    border: none;
+    padding: 0;
+    margin: 0;
+} */
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: transparent;
+}
+
+
+QDateEdit {
+    background-color: rgb(36, 36, 36);
+}
+QDateEdit::drop-down {
+    width: 20px;
+    height: 36px;
+    background-color: transparent;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+QDateEdit::down-button, QDateEdit::up-button {
+    width: 22px;
+    border: none;
+    background-color: transparent;
+}
+QDateEdit::down-button {
+    border-bottom-right-radius: 3px;
+}
+QDateEdit::up-button {
+    border-top-right-radius: 3px;
+}
+QDateEdit::down-button:pressed, QDateEdit::up-button:pressed {
+    background-color: rgb(64, 64, 64);
+}
+QDateEdit::up-arrow {
+    image: url(icon/slide-up.png);
+    width: 24px;
+    height: 24px;
+}
+ QDateEdit::down-arrow {
+    image: url(icon/slide-down.png);
+    width: 24px;
+    height: 24px;   
+ }
+
+
+QRadioButton {
+    background-color: transparent;
+}
+QRadioButton::indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    border: 4px solid rgb(36, 36, 36);
+    background-color: rgb(36, 36, 36);
+}
+QRadioButton::indicator:checked {
+    background-color: rgb(200, 200, 200);
+}
+
+
+/*QGroupBox {
+    border: 1px solid rgb(106, 101, 95);
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 10px;
+    margin: 0 5px;
+}*/
+
+QMenuBar::item:selected {
+    background-color: rgb(64, 64, 64);
+}
+/* QMenu::hover {
+    background-color: rgb(64, 64, 64);
+} */
+
+#main__menu {
+    background-color: #2B2B2B;
+}
+#menu, #menu_2, #menu_3 {
+    background-color: #2B2B2B;
+    border: 1px solid rgb(106, 101, 95);
+    border-radius: 3px;
+    padding: 0;
+    margin: 0;
+}
+#menu::selected, #menu_2::selected, #menu_3::selected {
+    background-color: rgb(64, 64, 64);
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+
+QDialog {
+    background-color: rgb(64, 64, 64);
+}
+QDialog QPushButton {
+    background-color: rgb(64, 64, 64);
+}
+
+
+QCheckBox {
+    background-color: transparent;
+}
+QCheckBox::indicator {
+    width: 12px;
+    height: 12px;
+    border: 1px solid rgb(106, 101, 95);
+    background-color: rgb(36, 36, 36);
+}
+QCheckBox::indicator:checked {
+    image: url(./icon/checked.png);
+  
+}
